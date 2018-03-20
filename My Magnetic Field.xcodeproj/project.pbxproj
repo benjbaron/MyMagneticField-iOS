@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43F75E40D97F308D3868480D /* Pods_My_Magnetic_FieldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC45FD18B22307F4691B74E1 /* Pods_My_Magnetic_FieldTests.framework */; };
+		67AF46C35D4AEA1657DF7FEE /* Pods_My_Magnetic_Field.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EF193C63C7A794E314DEC4 /* Pods_My_Magnetic_Field.framework */; };
+		76320104B162020A34213F4C /* Pods_My_Magnetic_FieldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913BC2225B5DFFB5DCEE76CE /* Pods_My_Magnetic_FieldUITests.framework */; };
+		B52C6B9920601AEA003D7551 /* DataCollectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C6B9820601AEA003D7551 /* DataCollectionService.swift */; };
+		B52C6B9B20602658003D7551 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C6B9A20602658003D7551 /* RecordListViewController.swift */; };
+		B563FEF7205DE2C600B0785D /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563FEF6205DE2C600B0785D /* RecordViewController.swift */; };
+		B563FEF9205DE32A00B0785D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563FEF8205DE32A00B0785D /* Extensions.swift */; };
+		B584C21F1FA0F16B002582D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B584C21E1FA0F16B002582D1 /* Assets.xcassets */; };
+		B584C2211FA0F720002582D1 /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584C2201FA0F720002582D1 /* LocationTableViewController.swift */; };
+		B5883BD51FA3274200EA8A02 /* MyMagneticField.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5883BD31FA3274100EA8A02 /* MyMagneticField.xcdatamodeld */; };
+		B5883BD71FA328D700EA8A02 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5883BD61FA328D700EA8A02 /* LocationCell.swift */; };
+		B599B3A41FA0B57F006D70B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599B3A31FA0B57F006D70B4 /* AppDelegate.swift */; };
+		B599B3A61FA0B57F006D70B4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599B3A51FA0B57F006D70B4 /* LocationViewController.swift */; };
+		B599B3A91FA0B57F006D70B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B599B3A71FA0B57F006D70B4 /* Main.storyboard */; };
+		B599B3B11FA0B57F006D70B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B599B3AF1FA0B57F006D70B4 /* LaunchScreen.storyboard */; };
+		B599B3BC1FA0B57F006D70B4 /* TrackingAdvisorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599B3BB1FA0B57F006D70B4 /* TrackingAdvisorTests.swift */; };
+		B599B3C71FA0B580006D70B4 /* TrackingAdvisorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599B3C61FA0B580006D70B4 /* TrackingAdvisorUITests.swift */; };
+		B5A25685205DECFC00FF3B0B /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A25684205DECFC00FF3B0B /* HelperFunctions.swift */; };
+		B5A25687205DED3400FF3B0B /* PlaceChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A25686205DED3400FF3B0B /* PlaceChooserViewController.swift */; };
+		B5A25689205DED9E00FF3B0B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A25688205DED9E00FF3B0B /* Constants.swift */; };
+		B5A2568B205EEC7300FF3B0B /* RecodingPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A2568A205EEC7300FF3B0B /* RecodingPlace.swift */; };
+		B5A2568D205EEF8900FF3B0B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A2568C205EEF8900FF3B0B /* Settings.swift */; };
+		B5C47B8B1FC34F9200FD091A /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47B8A1FC34F9200FD091A /* FileService.swift */; };
+		B5C47B8D1FC350A000FD091A /* RawCollectedDataTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47B8C1FC350A000FD091A /* RawCollectedDataTextViewController.swift */; };
+		B5C47B8F1FC3511600FD091A /* RawCollectedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47B8E1FC3511600FD091A /* RawCollectedDataViewController.swift */; };
+		B5DD9C581FA0D51E000B970F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DD9C571FA0D51E000B970F /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B599B3B81FA0B57F006D70B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B599B3981FA0B57F006D70B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B599B39F1FA0B57F006D70B4;
+			remoteInfo = TrackingAdvisor;
+		};
+		B599B3C31FA0B580006D70B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B599B3981FA0B57F006D70B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B599B39F1FA0B57F006D70B4;
+			remoteInfo = TrackingAdvisor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06AFEEA0A9C389AD75CD7137 /* Pods-My Magnetic Field.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Magnetic Field.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Magnetic Field/Pods-My Magnetic Field.release.xcconfig"; sourceTree = "<group>"; };
+		3180157DF9A11D1EB3B36DB8 /* Pods-My Magnetic FieldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Magnetic FieldUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Magnetic FieldUITests/Pods-My Magnetic FieldUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45819DA8E0065D7A41ECEE51 /* Pods-My Magnetic FieldUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Magnetic FieldUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Magnetic FieldUITests/Pods-My Magnetic FieldUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		89EF193C63C7A794E314DEC4 /* Pods_My_Magnetic_Field.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Magnetic_Field.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913BC2225B5DFFB5DCEE76CE /* Pods_My_Magnetic_FieldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Magnetic_FieldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52C6B9820601AEA003D7551 /* DataCollectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionService.swift; sourceTree = "<group>"; };
+		B52C6B9A20602658003D7551 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
+		B563FEF6205DE2C600B0785D /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		B563FEF8205DE32A00B0785D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B584C21E1FA0F16B002582D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B584C2201FA0F720002582D1 /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
+		B5883BD41FA3274100EA8A02 /* TrackingAdvisor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrackingAdvisor.xcdatamodel; sourceTree = "<group>"; };
+		B5883BD61FA328D700EA8A02 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		B599B3A01FA0B57F006D70B4 /* My Magnetic Field.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Magnetic Field.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B599B3A31FA0B57F006D70B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B599B3A51FA0B57F006D70B4 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		B599B3A81FA0B57F006D70B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B599B3B01FA0B57F006D70B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B599B3B21FA0B57F006D70B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B599B3B71FA0B57F006D70B4 /* My Magnetic FieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Magnetic FieldTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B599B3BB1FA0B57F006D70B4 /* TrackingAdvisorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingAdvisorTests.swift; sourceTree = "<group>"; };
+		B599B3BD1FA0B57F006D70B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B599B3C21FA0B580006D70B4 /* My Magnetic FieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Magnetic FieldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B599B3C61FA0B580006D70B4 /* TrackingAdvisorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingAdvisorUITests.swift; sourceTree = "<group>"; };
+		B599B3C81FA0B580006D70B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A25684205DECFC00FF3B0B /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		B5A25686205DED3400FF3B0B /* PlaceChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceChooserViewController.swift; sourceTree = "<group>"; };
+		B5A25688205DED9E00FF3B0B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B5A2568A205EEC7300FF3B0B /* RecodingPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecodingPlace.swift; sourceTree = "<group>"; };
+		B5A2568C205EEF8900FF3B0B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B5C47B8A1FC34F9200FD091A /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		B5C47B8C1FC350A000FD091A /* RawCollectedDataTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawCollectedDataTextViewController.swift; sourceTree = "<group>"; };
+		B5C47B8E1FC3511600FD091A /* RawCollectedDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawCollectedDataViewController.swift; sourceTree = "<group>"; };
+		B5DD9C571FA0D51E000B970F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B9166B4759414A17B84A9696 /* Pods-My Magnetic FieldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Magnetic FieldTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Magnetic FieldTests/Pods-My Magnetic FieldTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC45FD18B22307F4691B74E1 /* Pods_My_Magnetic_FieldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Magnetic_FieldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F0A632606F1117B87F4561 /* Pods-My Magnetic Field.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Magnetic Field.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Magnetic Field/Pods-My Magnetic Field.debug.xcconfig"; sourceTree = "<group>"; };
+		E7C22CB2C8EAF5F14073254D /* Pods-My Magnetic FieldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Magnetic FieldTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Magnetic FieldTests/Pods-My Magnetic FieldTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B599B39D1FA0B57F006D70B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DD9C581FA0D51E000B970F /* CoreLocation.framework in Frameworks */,
+				67AF46C35D4AEA1657DF7FEE /* Pods_My_Magnetic_Field.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B599B3B41FA0B57F006D70B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F75E40D97F308D3868480D /* Pods_My_Magnetic_FieldTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B599B3BF1FA0B580006D70B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76320104B162020A34213F4C /* Pods_My_Magnetic_FieldUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0174B3CCD190C702B68A789 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8F0A632606F1117B87F4561 /* Pods-My Magnetic Field.debug.xcconfig */,
+				06AFEEA0A9C389AD75CD7137 /* Pods-My Magnetic Field.release.xcconfig */,
+				E7C22CB2C8EAF5F14073254D /* Pods-My Magnetic FieldTests.debug.xcconfig */,
+				B9166B4759414A17B84A9696 /* Pods-My Magnetic FieldTests.release.xcconfig */,
+				45819DA8E0065D7A41ECEE51 /* Pods-My Magnetic FieldUITests.debug.xcconfig */,
+				3180157DF9A11D1EB3B36DB8 /* Pods-My Magnetic FieldUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B599B3971FA0B57F006D70B4 = {
+			isa = PBXGroup;
+			children = (
+				B599B3A21FA0B57F006D70B4 /* My Magnetic Field */,
+				B599B3BA1FA0B57F006D70B4 /* My Magnetic FieldTests */,
+				B599B3C51FA0B580006D70B4 /* My Magnetic FieldUITests */,
+				B599B3A11FA0B57F006D70B4 /* Products */,
+				B5DD9C561FA0D51E000B970F /* Frameworks */,
+				B0174B3CCD190C702B68A789 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B599B3A11FA0B57F006D70B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B599B3A01FA0B57F006D70B4 /* My Magnetic Field.app */,
+				B599B3B71FA0B57F006D70B4 /* My Magnetic FieldTests.xctest */,
+				B599B3C21FA0B580006D70B4 /* My Magnetic FieldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B599B3A21FA0B57F006D70B4 /* My Magnetic Field */ = {
+			isa = PBXGroup;
+			children = (
+				B599B3A31FA0B57F006D70B4 /* AppDelegate.swift */,
+				B599B3A71FA0B57F006D70B4 /* Main.storyboard */,
+				B599B3AF1FA0B57F006D70B4 /* LaunchScreen.storyboard */,
+				B599B3B21FA0B57F006D70B4 /* Info.plist */,
+				B5883BD31FA3274100EA8A02 /* MyMagneticField.xcdatamodeld */,
+				B584C21E1FA0F16B002582D1 /* Assets.xcassets */,
+				B599B3A51FA0B57F006D70B4 /* LocationViewController.swift */,
+				B5883BD61FA328D700EA8A02 /* LocationCell.swift */,
+				B5C47B8A1FC34F9200FD091A /* FileService.swift */,
+				B584C2201FA0F720002582D1 /* LocationTableViewController.swift */,
+				B5C47B8C1FC350A000FD091A /* RawCollectedDataTextViewController.swift */,
+				B5C47B8E1FC3511600FD091A /* RawCollectedDataViewController.swift */,
+				B563FEF6205DE2C600B0785D /* RecordViewController.swift */,
+				B563FEF8205DE32A00B0785D /* Extensions.swift */,
+				B5A25684205DECFC00FF3B0B /* HelperFunctions.swift */,
+				B5A25688205DED9E00FF3B0B /* Constants.swift */,
+				B5A25686205DED3400FF3B0B /* PlaceChooserViewController.swift */,
+				B5A2568A205EEC7300FF3B0B /* RecodingPlace.swift */,
+				B5A2568C205EEF8900FF3B0B /* Settings.swift */,
+				B52C6B9820601AEA003D7551 /* DataCollectionService.swift */,
+				B52C6B9A20602658003D7551 /* RecordListViewController.swift */,
+			);
+			path = "My Magnetic Field";
+			sourceTree = "<group>";
+		};
+		B599B3BA1FA0B57F006D70B4 /* My Magnetic FieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				B599B3BB1FA0B57F006D70B4 /* TrackingAdvisorTests.swift */,
+				B599B3BD1FA0B57F006D70B4 /* Info.plist */,
+			);
+			path = "My Magnetic FieldTests";
+			sourceTree = "<group>";
+		};
+		B599B3C51FA0B580006D70B4 /* My Magnetic FieldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B599B3C61FA0B580006D70B4 /* TrackingAdvisorUITests.swift */,
+				B599B3C81FA0B580006D70B4 /* Info.plist */,
+			);
+			path = "My Magnetic FieldUITests";
+			sourceTree = "<group>";
+		};
+		B5DD9C561FA0D51E000B970F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5DD9C571FA0D51E000B970F /* CoreLocation.framework */,
+				89EF193C63C7A794E314DEC4 /* Pods_My_Magnetic_Field.framework */,
+				BC45FD18B22307F4691B74E1 /* Pods_My_Magnetic_FieldTests.framework */,
+				913BC2225B5DFFB5DCEE76CE /* Pods_My_Magnetic_FieldUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B599B39F1FA0B57F006D70B4 /* My Magnetic Field */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B599B3CB1FA0B580006D70B4 /* Build configuration list for PBXNativeTarget "My Magnetic Field" */;
+			buildPhases = (
+				AEFA68798745DCE31404F03E /* [CP] Check Pods Manifest.lock */,
+				B599B39C1FA0B57F006D70B4 /* Sources */,
+				B599B39D1FA0B57F006D70B4 /* Frameworks */,
+				B599B39E1FA0B57F006D70B4 /* Resources */,
+				A368E31BE862F53DF799E5B0 /* [CP] Embed Pods Frameworks */,
+				69BD41BAF07890C1AA693A99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Magnetic Field";
+			productName = TrackingAdvisor;
+			productReference = B599B3A01FA0B57F006D70B4 /* My Magnetic Field.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B599B3B61FA0B57F006D70B4 /* My Magnetic FieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B599B3CE1FA0B580006D70B4 /* Build configuration list for PBXNativeTarget "My Magnetic FieldTests" */;
+			buildPhases = (
+				F1A7B53AE87218EE0044585F /* [CP] Check Pods Manifest.lock */,
+				B599B3B31FA0B57F006D70B4 /* Sources */,
+				B599B3B41FA0B57F006D70B4 /* Frameworks */,
+				B599B3B51FA0B57F006D70B4 /* Resources */,
+				A85C7C2E53766242CB7F3A64 /* [CP] Embed Pods Frameworks */,
+				6F1F7E74E2E31CE4533C702B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B599B3B91FA0B57F006D70B4 /* PBXTargetDependency */,
+			);
+			name = "My Magnetic FieldTests";
+			productName = TrackingAdvisorTests;
+			productReference = B599B3B71FA0B57F006D70B4 /* My Magnetic FieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B599B3C11FA0B580006D70B4 /* My Magnetic FieldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B599B3D11FA0B580006D70B4 /* Build configuration list for PBXNativeTarget "My Magnetic FieldUITests" */;
+			buildPhases = (
+				61BD5B46CCDB5648733923A3 /* [CP] Check Pods Manifest.lock */,
+				B599B3BE1FA0B580006D70B4 /* Sources */,
+				B599B3BF1FA0B580006D70B4 /* Frameworks */,
+				B599B3C01FA0B580006D70B4 /* Resources */,
+				E95EC63C24A30FFFA66629AC /* [CP] Embed Pods Frameworks */,
+				AD38DEC400C1E15116CD6AAA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B599B3C41FA0B580006D70B4 /* PBXTargetDependency */,
+			);
+			name = "My Magnetic FieldUITests";
+			productName = TrackingAdvisorUITests;
+			productReference = B599B3C21FA0B580006D70B4 /* My Magnetic FieldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B599B3981FA0B57F006D70B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Benjamin BARON";
+				TargetAttributes = {
+					B599B39F1FA0B57F006D70B4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					B599B3B61FA0B57F006D70B4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B599B39F1FA0B57F006D70B4;
+					};
+					B599B3C11FA0B580006D70B4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B599B39F1FA0B57F006D70B4;
+					};
+				};
+			};
+			buildConfigurationList = B599B39B1FA0B57F006D70B4 /* Build configuration list for PBXProject "My Magnetic Field" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B599B3971FA0B57F006D70B4;
+			productRefGroup = B599B3A11FA0B57F006D70B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B599B39F1FA0B57F006D70B4 /* My Magnetic Field */,
+				B599B3B61FA0B57F006D70B4 /* My Magnetic FieldTests */,
+				B599B3C11FA0B580006D70B4 /* My Magnetic FieldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B599B39E1FA0B57F006D70B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B599B3B11FA0B57F006D70B4 /* LaunchScreen.storyboard in Resources */,
+				B584C21F1FA0F16B002582D1 /* Assets.xcassets in Resources */,
+				B599B3A91FA0B57F006D70B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B599B3B51FA0B57F006D70B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B599B3C01FA0B580006D70B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61BD5B46CCDB5648733923A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Magnetic FieldUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69BD41BAF07890C1AA693A99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Magnetic Field/Pods-My Magnetic Field-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F1F7E74E2E31CE4533C702B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Magnetic FieldTests/Pods-My Magnetic FieldTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A368E31BE862F53DF799E5B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-My Magnetic Field/Pods-My Magnetic Field-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Magnetic Field/Pods-My Magnetic Field-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A85C7C2E53766242CB7F3A64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Magnetic FieldTests/Pods-My Magnetic FieldTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD38DEC400C1E15116CD6AAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Magnetic FieldUITests/Pods-My Magnetic FieldUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEFA68798745DCE31404F03E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Magnetic Field-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E95EC63C24A30FFFA66629AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Magnetic FieldUITests/Pods-My Magnetic FieldUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A7B53AE87218EE0044585F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Magnetic FieldTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B599B39C1FA0B57F006D70B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A25687205DED3400FF3B0B /* PlaceChooserViewController.swift in Sources */,
+				B599B3A61FA0B57F006D70B4 /* LocationViewController.swift in Sources */,
+				B5C47B8F1FC3511600FD091A /* RawCollectedDataViewController.swift in Sources */,
+				B5883BD71FA328D700EA8A02 /* LocationCell.swift in Sources */,
+				B563FEF7205DE2C600B0785D /* RecordViewController.swift in Sources */,
+				B599B3A41FA0B57F006D70B4 /* AppDelegate.swift in Sources */,
+				B563FEF9205DE32A00B0785D /* Extensions.swift in Sources */,
+				B5A25689205DED9E00FF3B0B /* Constants.swift in Sources */,
+				B5A2568B205EEC7300FF3B0B /* RecodingPlace.swift in Sources */,
+				B5A2568D205EEF8900FF3B0B /* Settings.swift in Sources */,
+				B52C6B9B20602658003D7551 /* RecordListViewController.swift in Sources */,
+				B584C2211FA0F720002582D1 /* LocationTableViewController.swift in Sources */,
+				B5883BD51FA3274200EA8A02 /* MyMagneticField.xcdatamodeld in Sources */,
+				B5C47B8D1FC350A000FD091A /* RawCollectedDataTextViewController.swift in Sources */,
+				B52C6B9920601AEA003D7551 /* DataCollectionService.swift in Sources */,
+				B5A25685205DECFC00FF3B0B /* HelperFunctions.swift in Sources */,
+				B5C47B8B1FC34F9200FD091A /* FileService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B599B3B31FA0B57F006D70B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B599B3BC1FA0B57F006D70B4 /* TrackingAdvisorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B599B3BE1FA0B580006D70B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B599B3C71FA0B580006D70B4 /* TrackingAdvisorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B599B3B91FA0B57F006D70B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B599B39F1FA0B57F006D70B4 /* My Magnetic Field */;
+			targetProxy = B599B3B81FA0B57F006D70B4 /* PBXContainerItemProxy */;
+		};
+		B599B3C41FA0B580006D70B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B599B39F1FA0B57F006D70B4 /* My Magnetic Field */;
+			targetProxy = B599B3C31FA0B580006D70B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B599B3A71FA0B57F006D70B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B599B3A81FA0B57F006D70B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B599B3AF1FA0B57F006D70B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B599B3B01FA0B57F006D70B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B599B3C91FA0B580006D70B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "My Magnetic Field/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B599B3CA1FA0B580006D70B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "My Magnetic Field/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B599B3CC1FA0B580006D70B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8F0A632606F1117B87F4561 /* Pods-My Magnetic Field.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8UMT23UD55;
+				INFOPLIST_FILE = "My Magnetic Field/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MyMagneticField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B599B3CD1FA0B580006D70B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06AFEEA0A9C389AD75CD7137 /* Pods-My Magnetic Field.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8UMT23UD55;
+				INFOPLIST_FILE = "My Magnetic Field/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MyMagneticField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B599B3CF1FA0B580006D70B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C22CB2C8EAF5F14073254D /* Pods-My Magnetic FieldTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E62AN8TV9T;
+				INFOPLIST_FILE = TrackingAdvisorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ben.TrackingAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Magnetic Field.app/My Magnetic Field";
+			};
+			name = Debug;
+		};
+		B599B3D01FA0B580006D70B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9166B4759414A17B84A9696 /* Pods-My Magnetic FieldTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E62AN8TV9T;
+				INFOPLIST_FILE = TrackingAdvisorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ben.TrackingAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Magnetic Field.app/My Magnetic Field";
+			};
+			name = Release;
+		};
+		B599B3D21FA0B580006D70B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45819DA8E0065D7A41ECEE51 /* Pods-My Magnetic FieldUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E62AN8TV9T;
+				INFOPLIST_FILE = TrackingAdvisorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ben.TrackingAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrackingAdvisor;
+			};
+			name = Debug;
+		};
+		B599B3D31FA0B580006D70B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3180157DF9A11D1EB3B36DB8 /* Pods-My Magnetic FieldUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E62AN8TV9T;
+				INFOPLIST_FILE = TrackingAdvisorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ben.TrackingAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrackingAdvisor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B599B39B1FA0B57F006D70B4 /* Build configuration list for PBXProject "My Magnetic Field" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B599B3C91FA0B580006D70B4 /* Debug */,
+				B599B3CA1FA0B580006D70B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B599B3CB1FA0B580006D70B4 /* Build configuration list for PBXNativeTarget "My Magnetic Field" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B599B3CC1FA0B580006D70B4 /* Debug */,
+				B599B3CD1FA0B580006D70B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B599B3CE1FA0B580006D70B4 /* Build configuration list for PBXNativeTarget "My Magnetic FieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B599B3CF1FA0B580006D70B4 /* Debug */,
+				B599B3D01FA0B580006D70B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B599B3D11FA0B580006D70B4 /* Build configuration list for PBXNativeTarget "My Magnetic FieldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B599B3D21FA0B580006D70B4 /* Debug */,
+				B599B3D31FA0B580006D70B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5883BD31FA3274100EA8A02 /* MyMagneticField.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5883BD41FA3274100EA8A02 /* TrackingAdvisor.xcdatamodel */,
+			);
+			currentVersion = B5883BD41FA3274100EA8A02 /* TrackingAdvisor.xcdatamodel */;
+			path = MyMagneticField.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B599B3981FA0B57F006D70B4 /* Project object */;
+}
