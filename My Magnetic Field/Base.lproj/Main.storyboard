@@ -145,7 +145,7 @@
             </objects>
             <point key="canvasLocation" x="2548" y="590"/>
         </scene>
-        <!--Record-->
+        <!--Recordings-->
         <scene sceneID="ceB-cq-m9B">
             <objects>
                 <viewController id="XC1-T3-1CE" customClass="RecordListViewController" customModule="My_Magnetic_Field" sceneMemberID="viewController">
@@ -155,7 +155,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="JBa-YL-N3s"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Record" image="list-tab" id="o2V-CP-zDY"/>
+                    <tabBarItem key="tabBarItem" title="Recordings" image="list-tab" id="o2V-CP-zDY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jv3-QU-JSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

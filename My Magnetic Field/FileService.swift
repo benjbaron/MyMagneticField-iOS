@@ -139,14 +139,14 @@ class FileService: NSObject {
         if fileExists(file: file) {
             var text = ""
             for d in data {
-                let line = "\(d.userId),\(d.timestamp),\(d.placeType),\(d.placeId),\(d.magX),\(d.magY),\(d.magZ)\n"
+                let line = "\(d.userId),\(d.timestamp),\(d.placeType),\(d.placeId),\(d.magX),\(d.magY),\(d.magZ),\(d.batteryState),\(d.batteryLevel),\(d.lowPowerMode)\n"
                 text.append(line)
             }
             append(text, in: file)
         } else  {
-            var text = "UserId,Timestamp,PlaceType,PlaceId,magX,magY,magZ\n"
+            var text = "UserId,Timestamp,PlaceType,PlaceId,magX,magY,magZ,BatteryState,BatteryLevel,LowPowerMode\n"
             for d in data {
-                let line = "\(d.userId),\(d.timestamp),\(d.placeType),\(d.placeId),\(d.magX),\(d.magY),\(d.magZ)\n"
+                let line = "\(d.userId),\(d.timestamp),\(d.placeType),\(d.placeId),\(d.magX),\(d.magY),\(d.magZ),\(d.batteryState),\(d.batteryLevel),\(d.lowPowerMode)\n"
                 text.append(line)
             }
             write(text, in: file)
