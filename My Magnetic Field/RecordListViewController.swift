@@ -162,7 +162,6 @@ class RecordListViewController: UIViewController, UICollectionViewDataSource, UI
     
     // MARK: - RecordingItemDelegate method
     func didUploadFile(with url: URL) {
-        uploadedFiles = Settings.getUploadedFiles()
         appDelegate.updateRecordList()
     }
     
@@ -224,7 +223,6 @@ class RecordingItem : UICollectionViewCell {
                 self?.uploadButton.isEnabled = false
                 self?.delegate?.didUploadFile(with: url)
             }
-            
         }
     }
     

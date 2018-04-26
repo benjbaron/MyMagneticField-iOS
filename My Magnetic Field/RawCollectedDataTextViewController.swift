@@ -22,7 +22,7 @@ class RawCollectedDataTextViewController: UIViewController {
         self.textView.text = filecontent
         
         // add an upload button in the view
-        let addButton = UIBarButtonItem(title: "Upload", style: .done, target: self, action: #selector(addTapped))
+        let addButton = UIBarButtonItem(title: "Upload", style: .done, target: self, action: #selector(uploadTapped))
         self.navigationItem.rightBarButtonItem = addButton
         
         super.viewWillAppear(animated)
@@ -32,7 +32,14 @@ class RawCollectedDataTextViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @objc func addTapped(sender: UIBarButtonItem) {
-        print("uploading file \(filename)")
+    @objc func uploadTapped(sender: UIBarButtonItem) {
+        FileService.upload(file: file) { [weak self] _ in
+            if let fname =  self?.file.deletingPathExtension().lastPathComponent {
+                Settings.addUploadedFile(fname: fname)
+                
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.updateRecordList()
+            }
+        }
     }
 }
